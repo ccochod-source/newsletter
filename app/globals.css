@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { background: #0D0D1A; scroll-behavior: smooth; }
+body {
+  font-family: var(--font-inter), -apple-system, system-ui, sans-serif;
+  color: #EDEDF5;
+  background: #0D0D1A;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+a { text-decoration: none; color: inherit; }
+button { font-family: inherit; cursor: pointer; border: none; }
+input  { font-family: inherit; }
+
+@keyframes scroll { 0% { transform:translateX(0); } 100% { transform:translateX(-50%); } }
+.marquee { animation: scroll 50s linear infinite; display:flex; min-width:max-content; }
+
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:.3} }
+.dot-live { animation: blink 2s ease-in-out infinite; }
