@@ -113,7 +113,7 @@ export default function UnsubscribePage() {
                 type="submit" disabled={status === 'loading'}
                 style={{
                   width: '100%', padding: '13px', borderRadius: 10, fontSize: 15,
-                  fontWeight: 700, color: '#fff', border: 'none', cursor: 'pointer',
+                  fontWeight: 700, cursor: 'pointer',
                   background: status === 'loading' ? '#374151' : 'rgba(239,68,68,0.15)',
                   border: '1px solid rgba(239,68,68,0.3)',
                   color: status === 'loading' ? 'rgba(237,237,245,0.4)' : '#F87171',

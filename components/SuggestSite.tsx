@@ -165,7 +165,7 @@ export default function SuggestSite() {
                   type="submit" disabled={status === 'loading'}
                   style={{
                     padding: '13px', borderRadius: 10, fontSize: 14, fontWeight: 700,
-                    color: '#fff', border: 'none', cursor: 'pointer',
+                    cursor: 'pointer',
                     background: status === 'loading' ? 'rgba(59,130,246,0.3)' : 'rgba(59,130,246,0.2)',
                     border: '1px solid rgba(59,130,246,0.35)',
                     color: status === 'loading' ? 'rgba(147,197,253,0.5)' : '#93C5FD',
