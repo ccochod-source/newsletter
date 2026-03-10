@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Footer() {
   return (
     <footer style={{ borderTop: '1px solid rgba(255,255,255,0.05)', padding: '36px 32px' }}>
@@ -19,9 +21,9 @@ export default function Footer() {
         </div>
         <p style={{ color: 'rgba(237,237,245,0.2)', fontSize: 13 }}>© 2026 TechPulse. Tous droits réservés.</p>
         <div style={{ display: 'flex', gap: 24 }}>
-          {['Confidentialité', 'Se désinscrire', 'Contact'].map(l => (
-            <a key={l} href="#" style={{ color: 'rgba(237,237,245,0.25)', fontSize: 13 }}>{l}</a>
-          ))}
+          <a href="#" style={{ color: 'rgba(237,237,245,0.25)', fontSize: 13 }}>Confidentialité</a>
+          <Link href="/unsubscribe" style={{ color: 'rgba(237,237,245,0.25)', fontSize: 13 }}>Se désinscrire</Link>
+          <a href="#" style={{ color: 'rgba(237,237,245,0.25)', fontSize: 13 }}>Contact</a>
         </div>
       </div>
     </footer>
