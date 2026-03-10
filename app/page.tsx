@@ -5,6 +5,7 @@ import Stats from '@/components/Stats'
 import Features from '@/components/Features'
 import SampleEdition from '@/components/SampleEdition'
 import Testimonials from '@/components/Testimonials'
+import SuggestSite from '@/components/SuggestSite'
 import Footer from '@/components/Footer'
 import LeadForm from '@/components/LeadForm'
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Features />
       <SampleEdition />
       <Testimonials />
+      <SuggestSite />
 
       {/* CTA Final */}
       <section style={{
